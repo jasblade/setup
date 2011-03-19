@@ -12,53 +12,9 @@ require 'cairo'
 --------------------------------------------------------------------------------
 --                                                                    gauge DATA
 gauge = {
---[[ ----- This is blocked out for testing ]
-{
-    name='cpu',                    arg='cpu0',                  max_value=100,
-    x=380,                         y=120,
-    graph_radius=50,
-    graph_thickness=5,
-    graph_start_angle=0,
-    graph_unit_angle=0.9,          graph_unit_thickness=0.9,
-    graph_bg_colour=0x00FFBB,      graph_bg_alpha=0.3,
-    graph_fg_colour=0x00FFBB,      graph_fg_alpha=0.0,
-    hand_fg_colour=0x00FFBB,       hand_fg_alpha=1.0,
-    txt_radius=40,
-    txt_weight=0,                  txt_size=10.0,
-    txt_fg_colour=0xFF0000,        txt_fg_alpha=0.8,
-    graduation_radius=30,
-    graduation_thickness=0,        graduation_mark_thickness=1,
-    graduation_unit_angle=27,
-    graduation_fg_colour=0x00FFBB, graduation_fg_alpha=0.3,
-    caption='',
-    caption_weight=1,              caption_size=8.0,
-    caption_fg_colour=0xFFFFFF,    caption_fg_alpha=0.3,
-},
-{
-    name='cpu',                    arg='cpu1',                  max_value=100,
-    x=380,                         y=120,
-    graph_radius=60,
-    graph_thickness=5,
-    graph_start_angle=0,
-    graph_unit_angle=0.9,          graph_unit_thickness=0.9,
-    graph_bg_colour=0x00FFBB,      graph_bg_alpha=0.3,
-    graph_fg_colour=0x00FFBB,      graph_fg_alpha=0.0,
-    hand_fg_colour=0x00FFBB,       hand_fg_alpha=1.0,
-    txt_radius=70,
-    txt_weight=1,                  txt_size=10.0,
-    txt_fg_colour=0x00FFBB,        txt_fg_alpha=0.8,
-    graduation_radius=55,
-    graduation_thickness=5,        graduation_mark_thickness=2,
-    graduation_unit_angle=10,
-    graduation_fg_colour=0x00FFBB, graduation_fg_alpha=0.3,
-    caption='',
-    caption_weight=1,              caption_size=8.0,
-    caption_fg_colour=0xFFFFFF,    caption_fg_alpha=0.3,
-},
---]]
 { -- CPU0
     name='cpu',                arg='cpu0',                      max_value=100,
-    x=260,                          y=90,
+    x=290,                          y=90,
     graph_radius=50,
     graph_thickness=8,
     graph_start_angle=260,
@@ -79,7 +35,7 @@ gauge = {
 },
 { -- CPU1
     name='cpu',                arg='cpu1',                      max_value=100,
-    x=260,                          y=90,
+    x=290,                          y=90,
     graph_radius=39,
     graph_thickness=4,
     graph_start_angle=260,
@@ -98,7 +54,7 @@ gauge = {
     caption_weight=1,              caption_size=10.0,
     caption_fg_colour=0xFFFFFF,    caption_fg_alpha=0.5,
 },
-
+--[[ -- unused table
 { -- mem perc
     name='memperc',                arg='',                      max_value=100,
     x=330,                          y=70,
@@ -120,12 +76,13 @@ gauge = {
     caption_weight=1,              caption_size=10.0,
     caption_fg_colour=0xFFFFFF,    caption_fg_alpha=0.5,
 },
+--]]
 { -- mem perc
     name='memperc',                arg='',                      max_value=100,
-    x=50,                          y=70,
+    x=185,                          y=70,
     graph_radius=34,
     graph_thickness=5,
-    graph_start_angle=190,
+    graph_start_angle=260,
     graph_unit_angle=2,            graph_unit_thickness=2,
     graph_bg_colour=0x00FFBB,      graph_bg_alpha=0.3,
     graph_fg_colour=0x00FFBB,      graph_fg_alpha=0.0,
@@ -143,7 +100,7 @@ gauge = {
 },
 { -- FS Used /
     name='fs_used_perc',           arg='/',                     max_value=100,
-    x=130,                         y=90,
+    x=75,                         y=90,
     graph_radius=40,
     graph_thickness=4,
     graph_start_angle=260,
@@ -165,7 +122,7 @@ gauge = {
 
 { -- FS Used /
     name='fs_used_perc',           arg='/',                max_value=100,
-    x=130,                         y=90,
+    x=75,                         y=90,
     graph_radius=50,
     graph_thickness=8,
     graph_start_angle=260,
