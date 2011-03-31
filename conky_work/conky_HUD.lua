@@ -23,7 +23,7 @@ gauge = {
     graph_fg_colour=0x00FFBB,      graph_fg_alpha=0.0,
     hand_fg_colour=0x00FFBB,       hand_fg_alpha=1.0,
     txt_radius=65,
-    txt_weight=1,                  txt_size=0,
+    txt_weight=1,                  txt_size=10.0,
     txt_fg_colour=0x00FFBB,        txt_fg_alpha=0.8,
     graduation_radius=58,
     graduation_thickness=3,        graduation_mark_thickness=2,
@@ -79,7 +79,7 @@ gauge = {
 --]]
 { -- mem perc
     name='memperc',                arg='',                      max_value=100,
-    x=185,                          y=70,
+    x=182,                          y=70,
     graph_radius=34,
     graph_thickness=5,
     graph_start_angle=260,
