@@ -1,10 +1,11 @@
-Host thesource
+Host iron
   User theblade
   HostName thesource.homelinux.net
   Port 1515
   Compression yes
-  DynamicForward 24201
   TCPKeepAlive yes
+  DynamicForward 54545
+#  DynamicForward 24201
   ControlMaster auto
   ControlPath ~/.ssh/master-%r@%h:%p
   EnableSSHKeysign yes
@@ -36,6 +37,11 @@ Host prod2
 Host dev
   User a.jmblade
   Hostname dlxxmgnt001.devapollogrp.edu
+  EnableSSHKeysign yes
+
+Host qaprod
+  User a.jmblade
+  Hostname onlq400mlx01.qaapollogrp.edu
   EnableSSHKeysign yes
 
 Host bpp
