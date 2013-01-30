@@ -11,45 +11,6 @@ Host iron
   EnableSSHKeysign yes
   VisualHostKey no
 
-Host asapap
-  User a.jmblade
-  Hostname asapap10
-  VisualHostKey yes
-
-Host ols
-  User a.jmblade
-  Hostname onlp100mlx01.ols.phoenix.edu
-  EnableSSHKeysign yes
-  VisualHostKey yes
-
-Host prod
-  User a.jmblade
-  Hostname apop200mlx01.apollogrp.edu
-  EnableSSHKeysign yes
-  VisualHostKey yes
-
-Host prod2
-  User a.jmblade
-  Hostname apop200mlx02.apollogrp.edu
-  EnableSSHKeysign yes
-  VisualHostKey yes
-
-Host dev
-  User a.jmblade
-  Hostname dlxxmgnt001.devapollogrp.edu
-  EnableSSHKeysign yes
-
-Host qaprod
-  User a.jmblade
-  Hostname onlq400mlx01.qaapollogrp.edu
-  EnableSSHKeysign yes
-
-Host bpp
-  User a.jmblade
-  Hostname plxxmgnt401.apolloglobal.int
-  EnableSSHKeysign yes
-  VisualHostKey yes
-
 Host *
   User a.jmblade
   EnableSSHKeysign yes
